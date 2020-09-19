@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="header__overlay">
+    <h1 class="header__title">Agricultural exchange</h1>
+    <nav class="header__links">
+      <a href=# class="header__link">
+        <img src="../../assets/house.svg" alt="" class="header__cart" title="Profile">
+      </a>
+      <a href=# class="header__link">
+        <img src="../../assets/store.svg"
+             alt="" class="header__cart"
+             title="Put a product on sale"
+             (click)="openPopup()">
+      </a>
+      <a href=# class="header__link">
+        <img src="../../assets/shopping-cart.svg" alt="" class="header__cart" title="Cart">
+      </a>
+    </nav>
+  </div>
+</header>
+<app-create-product *ngIf="isOpen" (isOpen)="submitProduct()"></app-create-product>
+<div class="main">
+  <ul class="product__list">
+    <li *ngFor="let item of [].constructor(10); let i = index">
+      <app-product></app-product>
+    </li>
+  </ul>
+</div>
+<app-user></app-user>

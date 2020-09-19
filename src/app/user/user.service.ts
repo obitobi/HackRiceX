@@ -6,9 +6,7 @@ import {Injectable} from '@angular/core';
 
 @Injectable()
 export class UserService {
-  private userUrl = 'https://cors-anywhere.herokuapp.com/https://hackathone.herokuapp.com/users';
-  private userUrsl = 'https://hackathone.herokuapp.com/users';
-  private userUrssl = 'https://secret-ocean-49799.herokuapp.com/https://hackathone.herokuapp.com/users';
+  private userUrl = 'https://cors-anywhere.herokuapp.com/https://hackathone2.herokuapp.com/';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'

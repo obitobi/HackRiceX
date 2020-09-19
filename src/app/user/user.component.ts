@@ -16,15 +16,11 @@ export class UserComponent implements OnInit {
   }
 
   getUsers(): void {
-    this.userService.getUsers().subscribe(users => this.users = users);
+    this.userService.getUsers().subscribe(users => console.log(users));
   }
-  test(): void {
-    const user: UserModel = new UserModel();
-    user.email = 'ddddsfe@gadxxs.ru';
-    user.password = 'asdsad';
-    const myUser = JSON.stringify(`{\"user\": ${JSON.stringify(user)}}`);
-    const s = '{"user": {"email":"ddsdd@gadss.ru","password":"asdsad"}}';
-    console.log(myUser);
-    this.userService.createUser(myUser).subscribe();
+
+  createUser() {
+    const user = '{"user":{"password":"asdfsdf", "email":"asdf@asdf.com"}}';
+    this.userService.createUser(user).subscribe(userr => console.log(userr));
   }
 }

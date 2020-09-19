@@ -1,0 +1,50 @@
+.container {
+  margin: 15px auto;
+  width: 200px;
+  height: 220px;
+  background-color: rgb(255,107,107);
+  border: 2px solid rgb(255,61,125);
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.card__title {
+  color: white;
+  -webkit-text-stroke: 1px rgb(193,18,107);
+  text-align: center;
+}
+
+.field {
+  border: 0;
+  border-bottom: 2px solid rgb(193,18,107);
+  padding: 0 0 13px 0;
+  width: 100%;
+  margin: 0 0 5px 0;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: rgb(193,18,107);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 25px;
+  color: white;
+}

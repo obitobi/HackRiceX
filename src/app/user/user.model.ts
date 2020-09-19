@@ -5,7 +5,6 @@ export class UserModel {
   firstName: string;
   secondName: string;
   sex: string;
-  githubLink: string;
   age: number;
   password: string;
 }

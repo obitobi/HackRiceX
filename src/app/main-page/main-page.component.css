@@ -1,0 +1,76 @@
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+input.ng-valid {
+  border: 1px solid green;
+}
+
+.product__list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: rgb(0,203,117);
+  background-size: cover;
+}
+
+.header__overlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header__title {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+  color: white;
+  padding-left: 30px;
+}
+
+.header__links {
+  padding-right: 30px;
+}
+
+.header__cart {
+  width: 30px;
+  height: 30px;
+}
+
+.header__link {
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  padding: 0 .5em;
+  color: white;
+  transition: opacity .2s ease-in-out;
+}
+.header__link:hover,
+.header__link:focus {
+  opacity: .7;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__add-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  margin: 15px 0;
+}
+
